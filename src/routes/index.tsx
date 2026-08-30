@@ -2,7 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import {
   Code2,
   Cpu,
+  FileText,
   GitBranch,
+  Github,
   Layers,
   Lightbulb,
   Mail,
@@ -15,6 +17,7 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import heroGlow from "@/assets/hero-glow.jpg";
+import mridulPhoto from "@/assets/mridul-mishra.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -116,6 +119,19 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mb-6 flex justify-center">
+            <div className="relative">
+              <img
+                src={mridulPhoto.url}
+                alt="Mridul Mishra"
+                className="h-32 w-32 rounded-full border-4 border-border object-cover shadow-xl sm:h-40 sm:w-40"
+                width={160}
+                height={160}
+              />
+              <span className="absolute bottom-1 right-1 h-5 w-5 rounded-full border-2 border-background bg-primary" />
+            </div>
+          </div>
+
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/80 px-4 py-1.5 text-sm font-medium text-muted-foreground backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-primary" />
             Open to internships & opportunities
@@ -285,7 +301,7 @@ function Index() {
                 Send an email
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="min-w-[200px]">
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
               <a
                 href="https://www.linkedin.com/in/mridul-mishra"
                 target="_blank"
@@ -296,8 +312,31 @@ function Index() {
             </Button>
           </div>
 
+          <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
+              <a
+                href="https://github.com/Mridul-Mishra-cse"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="h-4 w-4" />
+                GitHub
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
+              <a
+                href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_29245015089922640000_shared/e355503c-09e3-4183-9adf-bb390cd6cd25.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FileText className="h-4 w-4" />
+                View certificate
+              </a>
+            </Button>
+          </div>
+
           <p className="mt-6 text-sm text-muted-foreground">
-            Replace the links above with your real email and LinkedIn URL.
+            Replace the email and LinkedIn links above with your real details.
           </p>
         </div>
       </section>
