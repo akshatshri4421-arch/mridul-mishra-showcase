@@ -302,7 +302,7 @@ function Index() {
                 Send an email
               </a>
             </Button>
-            <Button asChild variant="outline" size="lg" className="min-w-[200px]">
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
               <a
                 href="https://www.linkedin.com/in/mridul-mishra"
                 target="_blank"
@@ -313,8 +313,31 @@ function Index() {
             </Button>
           </div>
 
+          <div className="mt-4 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
+              <a
+                href="https://github.com/Mridul-Mishra-cse"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="h-4 w-4" />
+                GitHub
+              </a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="min-w-[200px] gap-2">
+              <a
+                href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_29245015089922640000_shared/e355503c-09e3-4183-9adf-bb390cd6cd25.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FileText className="h-4 w-4" />
+                View certificate
+              </a>
+            </Button>
+          </div>
+
           <p className="mt-6 text-sm text-muted-foreground">
-            Replace the links above with your real email and LinkedIn URL.
+            Replace the email and LinkedIn links above with your real details.
           </p>
         </div>
       </section>
