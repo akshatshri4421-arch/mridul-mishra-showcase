@@ -120,6 +120,19 @@ function Index() {
         <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
+          <div className="mb-6 flex justify-center">
+            <div className="relative">
+              <img
+                src={mridulPhoto.url}
+                alt="Mridul Mishra"
+                className="h-32 w-32 rounded-full border-4 border-border object-cover shadow-xl sm:h-40 sm:w-40"
+                width={160}
+                height={160}
+              />
+              <span className="absolute bottom-1 right-1 h-5 w-5 rounded-full border-2 border-background bg-primary" />
+            </div>
+          </div>
+
           <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/80 px-4 py-1.5 text-sm font-medium text-muted-foreground backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-primary" />
             Open to internships & opportunities
