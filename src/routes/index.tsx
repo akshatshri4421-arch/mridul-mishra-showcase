@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
-  Award,
   Code2,
   Cpu,
   FileText,
