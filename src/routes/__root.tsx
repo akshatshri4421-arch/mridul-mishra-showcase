@@ -77,14 +77,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Mridul Mishra — Portfolio" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Mridul Mishra, a BTech 2nd-year student at Lovely Professional University. Exploring engineering, building skills, and open to opportunities.",
+      },
+      { name: "author", content: "Mridul Mishra" },
+      { property: "og:title", content: "Mridul Mishra — Portfolio" },
+      {
+        property: "og:description",
+        content:
+          "BTech 2nd-year student at Lovely Professional University. Exploring engineering, building skills, and open to opportunities.",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Mridul Mishra" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@MridulMishra" },
     ],
     links: [
       {
@@ -92,6 +101,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href:
+          "https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Space+Grotesk:wght@300..700&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
