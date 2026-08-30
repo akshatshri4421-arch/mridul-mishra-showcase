@@ -1,8 +1,11 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import {
+  Award,
   Code2,
   Cpu,
+  FileText,
   GitBranch,
+  Github,
   Layers,
   Lightbulb,
   Mail,
@@ -15,6 +18,7 @@ import { useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import heroGlow from "@/assets/hero-glow.jpg";
+import mridulPhoto from "@/assets/mridul-mishra.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
